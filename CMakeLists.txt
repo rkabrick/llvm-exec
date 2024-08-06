@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(LLVMExecutor)
+project(llvm-exec)
 # Find LLVM package
 find_package(LLVM REQUIRED CONFIG)
 
@@ -49,6 +49,6 @@ include_directories(${LLVM_INCLUDE_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
 
 # Add the executable
-add_executable(LLVMExecutor main.cpp)
+add_executable(llvm-exec main.cpp)
 
-target_link_libraries(LLVMExecutor ${llvm_libs} ${target_specific_libs})
+target_link_libraries(llvm-exec ${llvm_libs} ${target_specific_libs})
