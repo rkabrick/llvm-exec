@@ -15,3 +15,7 @@ make -j
 ```sh
 ./LLVMExecutor <path_to_ir_file>
 ```
+
+# Note(s)
+
+- If you get an error message `LLVM ERROR: Unsupported stack probing method` you have to make sure you are using the same version of clang included in your `DLLVM_DIR` argument passed during the compilation phase
