@@ -13,7 +13,7 @@ make -j
 # Usage
 
 ```sh
-./LLVMExecutor <path_to_ir_file>
+./llvm-exec <path_to_ir_file>
 ```
 
 # Note(s)
